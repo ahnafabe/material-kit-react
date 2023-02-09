@@ -23,8 +23,7 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
 function BuiltByDevelopers() {
-  const bgImage =
-    "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/desktop.jpg";
+  const bgImage = "assets/images/bg-sign-in-basic.jpeg";
 
   return (
     <MKBox
@@ -34,31 +33,36 @@ function BuiltByDevelopers() {
       my={2}
       py={6}
       sx={{
+        // backgroundImage: `url(${bgImage})`, //  UNCOMMENT IF YOU WANT THE PICTURE
         backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
           `${linearGradient(
             rgba(gradients.dark.main, 0.8),
             rgba(gradients.dark.state, 0.8)
           )}, url(${bgImage})`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "top",
+        display: "grid",
+        placeItems: "center",
       }}
     >
       <Container>
-        <Grid container item xs={12} lg={6} sx={{ ml: { xs: 0, lg: 6 } }}>
-          <MKTypography variant="h4" color="white" fontWeight="bold">
-            Built by developers
+        <Grid container item xs={12} lg={10} sx={{ ml: { xs: 0, lg: 6 } }}>
+          <MKTypography variant="h1" color="white" mb={5}>
+            Contact Us and Let The Memories Begin
           </MKTypography>
-          <MKTypography variant="h1" color="white" mb={1}>
-            Complex Documentation
-          </MKTypography>
-          <MKTypography variant="body1" color="white" opacity={0.8} mb={2}>
-            From colors, cards, typography to complex elements, you will find the full
-            documentation. Play with the utility classes and you will create unlimited combinations
-            for our components.
+          <MKTypography variant="body1" color="white" opacity={0.8} mb={5}>
+            Unleash the fun and capture life&apos;s most precious moments with our state-of-the-art
+            photobooth services! At Ace Productions we are equipped with high-quality cameras,
+            professional lighting, and a variety of props and backdrops to add that extra spark to
+            your special event. Whether you&apos;re celebrating a wedding, throwing a birthday
+            party, or hosting a corporate event, our photobooths provide a fun and interactive way
+            for you and your guests to create memories that will last a lifetime. With our
+            user-friendly touch screens and easy-to-use interfaces, you&apos;ll be able to capture
+            and share memories instantly with family and friends.
           </MKTypography>
           <MKTypography
             component="a"
-            href="https://www.creative-tim.com/learning-lab/react/overview/material-kit/"
+            href="/pages/landing-pages/contact-us"
             target="_blank"
             rel="noreferrer"
             variant="body2"
@@ -79,7 +83,7 @@ function BuiltByDevelopers() {
               },
             }}
           >
-            Read docs <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+            Book Now <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
           </MKTypography>
         </Grid>
       </Container>

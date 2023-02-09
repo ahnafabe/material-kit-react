@@ -29,10 +29,10 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
-import Counters from "pages/Presentation/sections/Counters";
+// import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
+// import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
+// import Pages from "pages/Presentation/sections/Pages";
 import Testimonials from "pages/Presentation/sections/Testimonials";
 import Download from "pages/Presentation/sections/Download";
 
@@ -44,26 +44,18 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "assets/images/transparent.png"; // UNCOMMENT IF YOU WANT THE PICTURE
+// import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 function Presentation() {
   return (
     <>
-      <DefaultNavbar
-        routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "info",
-        }}
-        sticky
-      />
+      <DefaultNavbar routes={routes} backgroundColor="white" sticky />
       <MKBox
-        minHeight="75vh"
+        height="105vh"
         width="100%"
         sx={{
-          backgroundImage: `url(${bgImage})`,
+          backgroundImage: `url(${bgImage})`, //  UNCOMMENT IF YOU WANT THE PICTURE
           backgroundSize: "cover",
           backgroundPosition: "top",
           display: "grid",
@@ -71,10 +63,10 @@ function Presentation() {
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+          <Grid container item xs={30} lg={40} justifyContent="center" mx="auto">
             <MKTypography
               variant="h1"
-              color="white"
+              color="dark"
               mt={-6}
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
@@ -83,18 +75,31 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              Ace Productions{" "}
             </MKTypography>
-            <MKTypography
+            {/* <MKTypography
               variant="body1"
-              color="white"
+              color="dark"
               textAlign="center"
               px={{ xs: 6, lg: 12 }}
-              mt={1}
+              mt={3}
+              mb={0}
+              sx={({ breakpoints, typography: { size } }) => ({
+                [breakpoints.down("sm")]: {
+                  fontSize: size["1xl"],
+                },
+              })}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
-            </MKTypography>
+              Unleash the fun and capture life&apos;s most precious moments with our
+              state-of-the-art photobooth services! At Ace Productions we are equipped with
+              high-quality cameras, professional lighting, and a variety of props and backdrops to
+              add that extra spark to your special event. Whether you&apos;re celebrating a wedding,
+              throwing a birthday party, or hosting a corporate event, our photobooths provide a fun
+              and interactive way for you and your guests to create memories that will last a
+              lifetime. With our user-friendly touch screens and easy-to-use interfaces, you&apos;ll
+              be able to capture and share memories instantly with family and friends. Book now and
+              let the memories begin!
+            </MKTypography> */}
           </Grid>
         </Container>
       </MKBox>
@@ -104,16 +109,16 @@ function Presentation() {
           mx: { xs: 2, lg: 3 },
           mt: -8,
           mb: 4,
-          backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
+          // backgroundColor: ({ palette: { black }, functions: { rgba } }) => rgba(black.main, 0.8),
           backdropFilter: "saturate(200%) blur(30px)",
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Counters />
+        {/* <Counters /> */}
         <Information />
-        <DesignBlocks />
-        <Pages />
-        <Container sx={{ mt: 6 }}>
+        {/* <DesignBlocks /> */}
+        {/* <Pages /> */}
+        <Container sx={{ mt: 0 }}>
           <BuiltByDevelopers />
         </Container>
         <Container>
@@ -148,7 +153,7 @@ function Presentation() {
             <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 color="info"
-                icon="apps"
+                icon="camera"
                 title="Components"
                 description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
                 action={{
