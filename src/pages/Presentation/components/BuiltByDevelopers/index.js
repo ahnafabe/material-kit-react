@@ -65,7 +65,7 @@ function BuiltByDevelopers() {
             href="/pages/landing-pages/contact-us"
             target="_blank"
             rel="noreferrer"
-            variant="body2"
+            variant="gradient"
             color="white"
             fontWeight="regular"
             sx={{
