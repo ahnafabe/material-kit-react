@@ -44,15 +44,15 @@ import routes from "routes"; // edit for contact us
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/transparent.png"; // UNCOMMENT IF YOU WANT THE PICTURE
+import bgImage from "assets/images/ace.png"; // UNCOMMENT IF YOU WANT THE PICTURE
 // import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 function Presentation() {
   return (
     <>
-      <DefaultNavbar routes={routes} backgroundColor="white" sticky />
+      <DefaultNavbar routes={routes} backgroundColor="dark" sticky dark />
       <MKBox
-        height="105vh"
+        height="125vh"
         width="100%"
         sx={{
           backgroundImage: `url(${bgImage})`, //  UNCOMMENT IF YOU WANT THE PICTURE
@@ -75,7 +75,8 @@ function Presentation() {
                 },
               })}
             >
-              Ace Productions{" "}
+              {" "}
+              {/* Ace Productions{" "} */}
             </MKTypography>
             {/* <MKTypography
               variant="body1"
@@ -192,7 +193,7 @@ function Presentation() {
               >
                 <MKSocialButton
                   component="a"
-                  href="https://twitter.com/intent/tweet?text= Thank you Ace Productions for making our event extra special! #photoboothfun #aceproductions #evententertainment #memoriesmade"
+                  href="https://twitter.com/intent/tweet?text= Thank you Ace Productions for making our event extra special! I highly recommend their services, check them out @aceproductionsinc on Instagram #photoboothfun #aceproductions #evententertainment #memoriesmade"
                   target="_blank"
                   color="twitter"
                   sx={{ mr: 1 }}
@@ -202,13 +203,13 @@ function Presentation() {
                 </MKSocialButton>
                 <MKSocialButton
                   component="a"
-                  href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/aceproductionsinc/"
+                  href="https://www.facebook.com/profile.php?id=100090203545590"
                   target="_blank"
                   color="facebook"
                   sx={{ mr: 1 }}
                 >
                   <i className="fab fa-facebook" />
-                  &nbsp;Share
+                  &nbsp;Follow
                 </MKSocialButton>
                 <MKSocialButton
                   component="a"

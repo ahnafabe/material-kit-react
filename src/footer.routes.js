@@ -21,7 +21,7 @@ export default {
   socials: [
     {
       icon: <FacebookIcon />,
-      link: "https://www.facebook.com/CreativeTim/", //  add link to fb page
+      link: "https://www.facebook.com/profile.php?id=100090203545590", //  add link to fb page
     },
     {
       icon: <InstagramIcon />,
@@ -63,7 +63,7 @@ export default {
     {
       name: "legal",
       items: [
-        { name: "terms & conditions", href: "https://www.creative-tim.com/terms" },
+        { name: "terms & conditions", href: "http://localhost:3000/pages/landing-pages/author" },
         // { name: "privacy policy", href: "https://www.creative-tim.com/privacy" },
         // { name: "licenses (EULA)", href: "https://www.creative-tim.com/license" },
       ],

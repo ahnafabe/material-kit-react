@@ -31,23 +31,15 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Image
-import bgImage from "assets/images/illustrations/illustration-reset.jpg";
+import bgImage from "assets/images/pic.png";
 
 function ContactUs() {
   return (
     <>
       <MKBox position="fixed" top="0.5rem" width="100%">
-        <DefaultNavbar
-          routes={routes}
-          action={{
-            type: "external",
-            route: "https://www.creative-tim.com/product/material-kit-react",
-            label: "free download",
-            color: "info",
-          }}
-        />
+        <DefaultNavbar routes={routes} />
       </MKBox>
-      <Grid container spacing={3} alignItems="center">
+      <Grid container spacing={4} alignItems="center">
         <Grid item xs={12} lg={6}>
           <MKBox
             display={{ xs: "none", lg: "flex" }}
@@ -64,7 +56,7 @@ function ContactUs() {
           xs={12}
           sm={10}
           md={7}
-          lg={6}
+          lg={8}
           xl={4}
           ml={{ xs: "auto", lg: 6 }}
           mr={{ xs: "auto", lg: 6 }}
@@ -82,8 +74,8 @@ function ContactUs() {
           >
             <MKBox
               variant="gradient"
-              bgColor="info"
-              coloredShadow="info"
+              bgColor="dark"
+              coloredShadow="dark"
               borderRadius="lg"
               p={2}
               mx={2}
@@ -95,8 +87,7 @@ function ContactUs() {
             </MKBox>
             <MKBox p={3}>
               <MKTypography variant="body2" color="text" mb={3}>
-                For further questions, including partnership opportunities, please email
-                hello@creative-tim.com or contact using our contact form.
+                Complete the following form for bookings and or any inquiries:
               </MKTypography>
               <MKBox width="100%" component="form" method="post" autocomplete="off">
                 <Grid container spacing={3}>
@@ -130,8 +121,8 @@ function ContactUs() {
                   </Grid>
                 </Grid>
                 <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
-                  <MKButton type="submit" variant="gradient" color="info">
-                    Send Message
+                  <MKButton type="submit" variant="gradient" color="dark">
+                    Send
                   </MKButton>
                 </Grid>
               </MKBox>

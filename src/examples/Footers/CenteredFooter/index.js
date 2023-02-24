@@ -115,14 +115,17 @@ CenteredFooter.defaultProps = {
     { href: "https://www.creative-tim.com/license", name: "License" },
   ],
   socials: [
-    { icon: <FacebookIcon fontSize="small" />, link: "https://www.facebook.com/CreativeTim/" },
+    {
+      icon: <FacebookIcon fontSize="small" />,
+      link: "https://www.facebook.com/profile.php?id=100090203545590",
+    },
     {
       icon: <TwitterIcon fontSize="small" />,
       link: "https://twitter.com/creativetim",
     },
     {
       icon: <InstagramIcon fontSize="small" />,
-      link: "https://www.instagram.com/creativetimofficial/",
+      link: "https://www.instagram.com/aceproductionsinc/",
     },
     {
       icon: <PinterestIcon fontSize="small" />,
