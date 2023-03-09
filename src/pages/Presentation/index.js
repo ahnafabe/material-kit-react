@@ -52,7 +52,7 @@ function Presentation() {
     <>
       <DefaultNavbar routes={routes} backgroundColor="dark" sticky dark />
       <MKBox
-        height="125vh"
+        height="95vh"
         width="100%"
         sx={{
           backgroundImage: `url(${bgImage})`, //  UNCOMMENT IF YOU WANT THE PICTURE
