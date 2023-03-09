@@ -75,7 +75,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
     window.addEventListener("resize", displayMobileNavbar);
 
     // Call the displayMobileNavbar function to set the state with the initial value.
-    displayMobileNavbar();
+    // displayMobileNavbar();
 
     // Remove event listener on cleanup
     return () => window.removeEventListener("resize", displayMobileNavbar);
@@ -164,7 +164,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
           borderRadius="xl"
           px={transparent ? 2 : 0}
         >
-          {mobileView && <DefaultNavbarMobile routes={routes} open={mobileNavbar} />}
+          {mobileView && <DefaultNavbarMobile routes={routes} />}
         </MKBox>
       </MKBox>
     </Container>
